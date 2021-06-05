@@ -1,0 +1,640 @@
+2021-05-13 13:32:25.059 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 13:32:25.089 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 13:32:25.192 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 13:32:25.242 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 13:32:25.242 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 13:32:25.278 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 13:32:25.279 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 2(Long)
+2021-05-13 13:32:25.288 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 2
+2021-05-13 13:36:07.960 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 13:36:07.961 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 13:36:07.966 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 13:36:07.976 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 13:36:07.976 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 13:36:07.978 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 13:36:07.978 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 13:36:07.985 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 13:45:36.532 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 13:45:36.535 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 13:45:36.543 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 13:51:49.283 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 13:51:49.284 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 13:51:49.288 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 13:56:44.561 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 13:56:44.562 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 13:56:44.566 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 13:57:56.917 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 13:57:56.918 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 13:57:56.921 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 13:57:56.928 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 13:57:56.929 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 13:57:56.932 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 13:57:56.933 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 13:57:56.940 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:00:19.972 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:00:19.973 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:00:19.977 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:00:19.992 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:00:19.992 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:00:19.995 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:00:19.996 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:00:20.003 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:00:27.962 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:00:27.964 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:00:27.969 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:00:27.976 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:00:27.976 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:00:27.979 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:00:27.981 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:00:27.984 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:00:50.070 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:00:50.070 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:00:50.073 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:00:50.079 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:00:50.080 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:00:50.082 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:00:50.083 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:00:50.085 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:04:23.490 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:04:23.491 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:04:23.494 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:04:23.501 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:04:23.501 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:04:23.503 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:04:23.504 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:04:23.507 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:04:38.495 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:04:38.496 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:04:38.498 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:04:38.506 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:04:38.506 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:04:38.509 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:04:38.511 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:04:38.513 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:05:06.996 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:05:06.997 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:05:06.999 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:05:07.006 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:05:07.006 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:05:07.009 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:05:07.010 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:05:07.013 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:07:39.848 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:07:39.849 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:07:39.853 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:07:39.859 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:07:39.859 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:07:39.861 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:07:39.862 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:07:39.864 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:08:40.805 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:08:40.806 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:08:40.809 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:08:40.815 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:08:40.816 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:08:40.818 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:08:40.819 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:08:40.821 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:08:50.421 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:08:50.421 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:08:50.424 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:08:50.432 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:08:50.432 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:08:50.435 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:08:50.435 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:08:50.438 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:11:17.941 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:11:17.942 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:11:17.951 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:11:17.957 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:11:17.957 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:11:17.960 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:11:17.961 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:11:17.965 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:13:21.842 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:13:21.842 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:13:21.845 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:13:21.852 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:13:21.852 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:13:21.855 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:13:21.856 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:13:21.858 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:14:41.984 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:14:41.984 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:14:41.986 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:14:41.992 [http-nio-8081-exec-8] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 14:14:41.993 [http-nio-8081-exec-8] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 14:14:41.995 [http-nio-8081-exec-8] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 14:16:08.155 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:16:08.156 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:16:08.159 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:16:08.165 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:16:08.166 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:16:08.168 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:16:08.169 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:16:08.171 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:17:10.597 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:17:10.598 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:17:10.600 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:17:10.609 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:17:10.610 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:17:10.613 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:17:10.613 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:17:10.615 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:18:30.475 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:18:30.476 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:18:30.478 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:18:30.483 [http-nio-8081-exec-1] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 14:18:30.483 [http-nio-8081-exec-1] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 6(Integer)
+2021-05-13 14:18:30.485 [http-nio-8081-exec-1] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 14:19:28.417 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:19:28.417 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:19:28.419 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:19:28.425 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:19:28.426 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:19:28.428 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:19:28.429 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:19:28.431 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:19:29.402 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:19:29.403 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:19:29.405 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:19:29.410 [http-nio-8081-exec-5] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 14:19:29.411 [http-nio-8081-exec-5] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 6(Integer)
+2021-05-13 14:19:29.412 [http-nio-8081-exec-5] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 14:19:35.180 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:19:35.181 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:19:35.183 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:19:35.186 [http-nio-8081-exec-9] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 14:19:35.187 [http-nio-8081-exec-9] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 2(Integer)
+2021-05-13 14:19:35.188 [http-nio-8081-exec-9] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 14:19:38.548 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:19:38.549 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:19:38.551 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:19:38.555 [http-nio-8081-exec-2] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 14:19:38.557 [http-nio-8081-exec-2] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 10(Integer)
+2021-05-13 14:19:38.559 [http-nio-8081-exec-2] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 14:36:43.582 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:36:43.582 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:36:43.585 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:36:43.590 [http-nio-8081-exec-8] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 14:36:43.591 [http-nio-8081-exec-8] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 7(Integer)
+2021-05-13 14:36:43.592 [http-nio-8081-exec-8] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 14:51:32.437 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:51:32.440 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:51:32.453 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:51:32.468 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:51:32.468 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:51:32.472 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:51:32.473 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:51:32.477 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 14:51:47.091 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 14:51:47.092 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 14:51:47.096 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 14:51:47.106 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 14:51:47.107 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 14:51:47.110 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 14:51:47.111 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 14:51:47.114 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:07:14.493 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:07:14.494 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:07:14.497 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:07:14.506 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 15:07:14.507 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 15:07:14.511 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 15:07:14.511 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 15:07:14.515 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:30:31.227 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:30:31.228 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:30:31.231 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:30:31.245 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 15:30:31.248 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 15:30:31.253 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 15:30:31.254 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 15:30:31.258 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:31:51.658 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:31:51.660 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:31:51.663 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:31:51.679 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 15:31:51.680 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 15:31:51.686 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 15:31:51.688 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 15:31:51.692 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:31:59.381 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:31:59.382 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:31:59.389 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:31:59.407 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 15:31:59.409 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 15:31:59.414 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 15:31:59.416 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 15:31:59.420 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:33:17.628 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:33:17.630 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:33:17.637 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:33:17.664 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 15:33:17.664 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 15:33:17.668 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 15:33:17.669 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 15:33:17.673 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:36:26.298 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:36:26.299 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:36:26.307 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:36:26.324 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 15:36:26.324 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 15:36:26.328 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 15:36:26.331 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 15:36:26.335 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 15:36:27.219 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:36:27.220 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:36:27.225 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:36:27.273 [http-nio-8081-exec-7] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 15:36:27.279 [http-nio-8081-exec-7] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 6(Integer)
+2021-05-13 15:36:27.286 [http-nio-8081-exec-7] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 15:36:30.320 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:36:30.321 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:36:30.324 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:36:30.334 [http-nio-8081-exec-9] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 15:36:30.335 [http-nio-8081-exec-9] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 2(Integer)
+2021-05-13 15:36:30.337 [http-nio-8081-exec-9] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 15:36:32.950 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:36:32.950 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:36:32.955 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:36:32.972 [http-nio-8081-exec-4] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 15:36:32.974 [http-nio-8081-exec-4] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 1(Integer)
+2021-05-13 15:36:32.976 [http-nio-8081-exec-4] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 15:36:36.900 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 15:36:36.901 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 15:36:36.905 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 15:36:36.918 [http-nio-8081-exec-2] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==>  Preparing: SELECT id,worker_id AS workerId,notice_title AS noticeTitle,notice_body AS noticeBody,notice_date AS noticeDate,notice_area AS noticeArea,remark FROM t_notice WHERE id=?
+2021-05-13 15:36:36.918 [http-nio-8081-exec-2] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - ==> Parameters: 10(Integer)
+2021-05-13 15:36:36.921 [http-nio-8081-exec-2] DEBUG com.yicao.pmiapi.mapper.NoticeMapper.selectById - <==      Total: 1
+2021-05-13 15:58:22.747 [main] DEBUG com.yicao.pmiapi.mapper.AccountMapper.selectOne - ==>  Preparing: SELECT id,username,password,last_login AS lastLogin,type,enable FROM t_account WHERE (username = ?)
+2021-05-13 15:58:22.789 [main] DEBUG com.yicao.pmiapi.mapper.AccountMapper.selectOne - ==> Parameters: user(String)
+2021-05-13 15:59:20.931 [main] DEBUG com.yicao.pmiapi.mapper.AccountMapper.selectOne - ==>  Preparing: SELECT id,username,password,last_login AS lastLogin,enable FROM t_account WHERE (username = ?)
+2021-05-13 15:59:20.961 [main] DEBUG com.yicao.pmiapi.mapper.AccountMapper.selectOne - ==> Parameters: user(String)
+2021-05-13 15:59:21.011 [main] DEBUG com.yicao.pmiapi.mapper.AccountMapper.selectOne - <==      Total: 1
+2021-05-13 16:34:33.018 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:34:33.058 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 16:34:33.108 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:42:25.266 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:42:25.310 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 16:42:25.358 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:42:25.362 [main] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 16:42:25.362 [main] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 16:42:25.429 [main] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 16:46:18.478 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:46:18.518 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 16:46:18.568 [main] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:46:18.578 [main] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:46:18.578 [main] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 16:46:18.598 [main] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:47:53.545 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:47:53.566 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:47:53.605 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:47:53.607 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:47:53.608 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:47:53.621 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:47:53.644 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:47:53.644 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:47:53.654 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:47:53.654 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:47:53.654 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:47:53.654 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:47:59.152 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:47:59.153 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:47:59.154 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:47:59.155 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:47:59.156 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:47:59.160 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:47:59.164 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:47:59.165 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 16:47:59.167 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:47:59.168 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:47:59.169 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 16:47:59.174 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:49:38.198 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:49:38.199 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:49:38.200 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:49:38.202 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:49:38.203 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:49:38.205 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:49:38.209 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:49:38.209 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 16:49:38.210 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:49:38.212 [http-nio-8081-exec-8] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 16:49:38.212 [http-nio-8081-exec-8] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 16:49:38.221 [http-nio-8081-exec-8] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 16:52:26.038 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:26.065 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:52:26.107 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:26.110 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:26.111 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:52:26.124 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:26.185 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:26.185 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 16:52:26.188 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:26.189 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 16:52:26.190 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 16:52:26.197 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 16:52:33.867 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:33.868 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:52:33.871 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:33.873 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:33.873 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:52:33.877 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:33.883 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:33.883 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 16:52:33.885 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:33.886 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:33.886 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 16:52:33.889 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:40.622 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:40.623 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:52:40.625 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:40.627 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:40.628 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:52:40.631 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:40.635 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:40.677 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin2(String)
+2021-05-13 16:52:40.678 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:40.680 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:40.681 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin2(String)
+2021-05-13 16:52:40.683 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:49.344 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:49.345 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:52:49.346 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:49.347 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:49.348 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:52:49.351 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:49.356 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:49.356 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: fa(String)
+2021-05-13 16:52:49.357 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 16:52:52.100 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:52.101 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:52:52.104 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:52.106 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:52.107 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:52:52.109 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:52.113 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:52.114 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: 123(String)
+2021-05-13 16:52:52.115 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 16:52:54.984 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:54.984 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:52:54.985 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:52:54.987 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:52:54.988 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:52:54.992 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:52:54.998 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:52:54.998 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: 1adasd23(String)
+2021-05-13 16:52:54.999 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 16:53:16.064 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:53:16.064 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 16:53:16.066 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 16:53:16.067 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 16:53:16.068 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 16:53:16.071 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 16:53:16.076 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 16:53:16.077 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: 123(String)
+2021-05-13 16:53:16.078 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:35:07.479 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:07.503 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:35:07.544 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:35:07.546 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:35:07.547 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:35:07.560 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:35:07.615 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:07.615 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: 123(String)
+2021-05-13 22:35:07.616 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:35:13.160 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:13.161 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:35:13.162 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:35:13.164 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:35:13.164 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:35:13.170 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:35:13.175 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:13.175 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: 123(String)
+2021-05-13 22:35:13.176 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:35:20.028 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:20.029 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:35:20.031 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:35:20.032 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:35:20.033 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:35:20.036 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:35:20.040 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:20.041 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 22:35:20.042 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:35:20.044 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:35:20.045 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 22:35:20.048 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:35:24.754 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:24.754 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:35:24.755 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:35:24.756 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:35:24.757 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:35:24.759 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:35:24.763 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:35:24.764 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 22:35:24.765 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:35:24.766 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:35:24.766 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 22:35:24.770 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:37:00.821 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:37:00.841 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:37:00.888 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:37:00.890 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:37:00.890 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:37:00.902 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:37:00.964 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:37:00.965 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 22:37:00.966 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:37:00.969 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:37:00.969 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 22:37:00.973 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:37:07.019 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:37:07.020 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:37:07.022 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:37:07.024 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:37:07.024 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:37:07.029 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:37:07.034 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:37:07.034 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin1(String)
+2021-05-13 22:37:07.035 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:37:33.463 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:37:33.464 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:37:33.465 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:37:33.467 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:37:33.468 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:37:33.472 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:37:33.478 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:37:33.478 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 22:37:33.480 [http-nio-8081-exec-4] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:37:33.481 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:37:33.481 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 22:37:33.485 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:42:07.326 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:42:07.354 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:42:07.388 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:42:07.390 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:42:07.391 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:42:07.404 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:42:07.463 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:42:07.463 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 22:42:07.464 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:42:07.466 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:42:07.466 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 22:42:07.470 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:42:08.985 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:42:08.986 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:42:08.988 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:42:08.990 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:42:08.990 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:42:08.994 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:42:08.998 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:42:08.999 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admi1n(String)
+2021-05-13 22:42:09.000 [http-nio-8081-exec-2] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:42:18.975 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:42:18.976 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:42:18.980 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:42:18.981 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:42:18.982 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:42:18.985 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:42:18.990 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:42:18.991 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admi1n(String)
+2021-05-13 22:42:18.993 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:43:22.399 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:43:22.421 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:43:22.446 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:43:22.446 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:43:22.446 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:43:22.462 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:43:22.512 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:43:22.512 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admi1n(String)
+2021-05-13 22:43:22.512 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 22:54:44.596 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:54:44.600 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:54:44.617 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:54:44.619 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:54:44.620 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:54:44.625 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:54:44.707 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 22:54:44.708 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 22:54:44.751 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 22:54:44.752 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 22:54:44.771 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 22:56:06.385 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:56:06.386 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:56:06.390 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:56:06.394 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:56:06.394 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:56:06.397 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:56:06.403 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 22:56:06.404 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 22:56:06.408 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 22:56:06.408 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 22:56:06.414 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 22:58:35.440 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 22:58:35.441 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: super(String)
+2021-05-13 22:58:35.443 [http-nio-8081-exec-8] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 22:58:35.445 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 22:58:35.446 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-13 22:58:35.449 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 22:58:35.457 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT COUNT(1) FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id
+2021-05-13 22:58:35.458 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 
+2021-05-13 22:58:35.460 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==>  Preparing: SELECT t1.*, t2.worker_name, t3.name AS area_name FROM t_notice t1, t_worker t2, t_area t3 WHERE t1.worker_id = t2.worker_id AND t1.notice_area = t3.id ORDER BY notice_date DESC LIMIT ?,?
+2021-05-13 22:58:35.460 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - ==> Parameters: 0(Long), 5(Long)
+2021-05-13 22:58:35.463 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.NoticeMapper.findNoticeList - <==      Total: 5
+2021-05-13 23:13:58.233 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:13:58.235 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admi1n(String)
+2021-05-13 23:13:58.237 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:22:40.488 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:22:40.508 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admi1n(String)
+2021-05-13 23:22:40.573 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:33:20.252 [http-nio-8081-exec-10] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:20.253 [http-nio-8081-exec-10] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 23:33:20.261 [http-nio-8081-exec-10] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:33:20.263 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 23:33:20.263 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 23:33:20.280 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 23:33:21.387 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:21.388 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 23:33:21.389 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:33:21.391 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 23:33:21.391 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 23:33:21.395 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 23:33:29.472 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:29.473 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: null
+2021-05-13 23:33:29.475 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:33:40.313 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:40.314 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: null
+2021-05-13 23:33:40.315 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:33:44.742 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:44.742 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: null
+2021-05-13 23:33:44.743 [http-nio-8081-exec-6] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:33:52.927 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:52.928 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 23:33:52.929 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:33:52.931 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 23:33:52.931 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 23:33:52.936 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 23:33:56.710 [http-nio-8081-exec-10] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:33:56.710 [http-nio-8081-exec-10] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: admin(String)
+2021-05-13 23:33:56.711 [http-nio-8081-exec-10] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:33:56.713 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-13 23:33:56.714 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-13 23:33:56.717 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-13 23:34:00.570 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:34:00.571 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: null
+2021-05-13 23:34:00.573 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:34:07.942 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:34:07.943 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: null
+2021-05-13 23:34:07.944 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:38:01.681 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:38:01.682 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: 123(String)
+2021-05-13 23:38:01.683 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 0
+2021-05-13 23:38:28.989 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:38:28.991 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:38:28.994 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:38:28.997 [http-nio-8081-exec-9] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:38:28.997 [http-nio-8081-exec-9] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:38:29.010 [http-nio-8081-exec-9] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:40:16.303 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:40:16.303 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:16.305 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:40:16.306 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:40:16.307 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:16.309 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:40:21.768 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:40:21.769 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:21.770 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:40:21.772 [http-nio-8081-exec-3] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:40:21.773 [http-nio-8081-exec-3] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:21.776 [http-nio-8081-exec-3] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:40:37.132 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:40:37.133 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:37.134 [http-nio-8081-exec-5] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:40:37.135 [http-nio-8081-exec-5] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:40:37.135 [http-nio-8081-exec-5] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:37.137 [http-nio-8081-exec-5] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:40:43.447 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:40:43.448 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:43.449 [http-nio-8081-exec-7] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:40:43.450 [http-nio-8081-exec-7] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:40:43.451 [http-nio-8081-exec-7] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:40:43.453 [http-nio-8081-exec-7] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:41:56.642 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:41:56.643 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:41:56.644 [http-nio-8081-exec-9] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:41:56.646 [http-nio-8081-exec-9] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:41:56.646 [http-nio-8081-exec-9] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:41:56.649 [http-nio-8081-exec-9] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:43:46.193 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:43:46.193 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:43:46.195 [http-nio-8081-exec-1] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:43:46.197 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:43:46.197 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:43:46.199 [http-nio-8081-exec-1] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1
+2021-05-13 23:43:51.369 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==>  Preparing: SELECT t2.* FROM t_account t1, t_worker_family_account t2 WHERE t1.id = t2.account_id AND t1.username = ?
+2021-05-13 23:43:51.370 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - ==> Parameters: user(String)
+2021-05-13 23:43:51.372 [http-nio-8081-exec-3] DEBUG c.y.pmiapi.mapper.AccountMapper.getTypeByUsername - <==      Total: 1
+2021-05-13 23:43:51.375 [http-nio-8081-exec-3] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_family t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.family_id = t2.id
+2021-05-13 23:43:51.375 [http-nio-8081-exec-3] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - ==> Parameters: user(String)
+2021-05-13 23:43:51.378 [http-nio-8081-exec-3] DEBUG c.y.p.m.AccountMapper.getFamilyAccountByUsername - <==      Total: 1

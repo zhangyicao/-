@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.HouseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.House">
+        <id column="id" property="id" />
+        <result column="building_num" property="buildingNum" />
+        <result column="unit_num" property="unitNum" />
+        <result column="floor_num" property="floorNum" />
+        <result column="house_num" property="houseNum" />
+        <result column="house_state" property="houseState" />
+        <result column="complete_date" property="completeDate" />
+        <result column="house_area" property="houseArea" />
+        <result column="house_type" property="houseType" />
+        <result column="remark" property="remark" />
+        <result column="area_id" property="areaId" />
+        <result column="family_id" property="familyId" />
+        <association property="address" column="id" javaType="java.lang.String"  select="getAddressById" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, building_num, unit_num, floor_num, house_num, house_state, complete_date, house_area, house_type, remark, area_id, family_id
+    </sql>
+
+    <!--根据家庭id获取住房列表-->
+    <select id="getListByFamilyId" resultMap="BaseResultMap">
+        select * from t_house where family_id = #{family_id}
+    </select>
+
+    <!-- 根据住房id获得住房住址-->
+    <select id="getAddressById" resultType="java.lang.String">
+        SELECT
+          CONCAT(t2.name, ' ', t3.name, ' ', t4.name, ' ', t1.house_num) address
+        FROM
+            t_house t1,
+            t_area t2,
+            t_building t3,
+            t_unit t4
+        WHERE
+            t1.area_id = t2.id AND
+            t1.building_num = t3.id AND
+            t1.unit_num = t4.id AND
+            t1.id = #{id}
+    </select>
+
+</mapper>

@@ -1,0 +1,678 @@
+2021-05-18 14:17:08.343 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 6604 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 14:17:08.353 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 14:17:09.971 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 14:17:09.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 14:17:09.981 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 14:17:09.981 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 14:17:10.057 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 14:17:10.057 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1644 ms
+2021-05-18 14:17:13.051 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 14:17:13.391 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 14:17:13.401 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 14:17:13.401 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 14:17:13.431 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71e7adbb, org.springframework.security.web.context.SecurityContextPersistenceFilter@6eb089e6, org.springframework.security.web.header.HeaderWriterFilter@6cae2e4d, org.springframework.web.filter.CorsFilter@53a9fcfd, org.springframework.security.web.authentication.logout.LogoutFilter@15d0d6c9, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@a96d56c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bc69ce9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a47597, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32091c14, org.springframework.security.web.session.SessionManagementFilter@58324c9f, org.springframework.security.web.access.ExceptionTranslationFilter@7741771e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23ad71bf]
+2021-05-18 14:17:13.481 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 14:17:13.501 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 14:17:13.501 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 14:17:13.521 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 14:17:13.571 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 14:17:13.711 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 14:17:13.741 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 14:17:13.761 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 14:17:13.761 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 14:17:13.761 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 14:17:13.811 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 14:17:13.841 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 14:17:13.841 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 14:17:13.841 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 14:17:13.841 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 14:17:13.851 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 14:17:13.861 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 6.201 seconds (JVM running for 8.132)
+2021-05-18 14:20:13.004 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 14:20:13.004 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 14:20:13.006 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-18 14:20:14.166 [http-nio-8081-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 15:16:34.862 [http-nio-8081-exec-7] INFO  com.yicao.pmiapi.controller.UploadPhotoController - 图片上传，保存位置：E:/pmi/images/
+2021-05-18 15:16:34.863 [http-nio-8081-exec-7] INFO  com.yicao.pmiapi.controller.UploadPhotoController - 图片上传，访问URL：http://localhost:8081/images/58f355b1dad74b68ad50a88216fc3be9.jpeg
+2021-05-18 15:19:50.567 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 12836 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 15:19:50.571 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 15:19:52.346 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 15:19:52.366 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 15:19:52.366 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 15:19:52.366 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 15:19:52.586 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 15:19:52.586 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1937 ms
+2021-05-18 15:19:56.907 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 15:19:57.360 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 15:19:57.360 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 15:19:57.360 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 15:19:57.360 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 15:19:57.361 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 15:19:57.361 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 15:19:57.361 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 15:19:57.361 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 15:19:57.361 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 15:19:57.361 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 15:19:57.362 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 15:19:57.398 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1983b48a, org.springframework.security.web.context.SecurityContextPersistenceFilter@35d60381, org.springframework.security.web.header.HeaderWriterFilter@115dcaea, org.springframework.web.filter.CorsFilter@2f61d591, org.springframework.security.web.authentication.logout.LogoutFilter@28157173, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@44065156, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61ffd148, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dfe8b37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@629a9f26, org.springframework.security.web.session.SessionManagementFilter@2785db06, org.springframework.security.web.access.ExceptionTranslationFilter@2c748a15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d40a3b4]
+2021-05-18 15:19:57.466 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 15:19:57.487 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 15:19:57.488 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 15:19:57.504 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 15:19:57.568 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 15:19:57.725 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 15:19:57.749 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 15:19:57.768 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 15:19:57.770 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 15:19:57.773 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 15:19:57.833 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 15:19:57.880 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 15:19:57.882 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 15:19:57.884 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 15:19:57.887 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 15:19:57.891 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 15:19:57.913 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 8.41 seconds (JVM running for 11.271)
+2021-05-18 15:19:58.335 [http-nio-8081-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 15:19:58.336 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 15:19:58.337 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-18 15:19:59.992 [http-nio-8081-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 16:31:26.180 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 16748 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 16:31:26.185 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 16:31:28.176 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 16:31:28.189 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 16:31:28.190 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 16:31:28.190 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 16:31:28.328 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 16:31:28.328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2030 ms
+2021-05-18 16:31:31.974 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 16:31:32.336 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 16:31:32.337 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 16:31:32.338 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 16:31:32.373 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@629a9f26, org.springframework.security.web.context.SecurityContextPersistenceFilter@68ab6ab0, org.springframework.security.web.header.HeaderWriterFilter@cfd1075, org.springframework.web.filter.CorsFilter@332820f4, org.springframework.security.web.authentication.logout.LogoutFilter@11c713b7, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@3791f50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58324c9f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11dcd42c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b791a81, org.springframework.security.web.session.SessionManagementFilter@79980d8d, org.springframework.security.web.access.ExceptionTranslationFilter@19fd43da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f13811b]
+2021-05-18 16:31:32.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 16:31:32.474 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 16:31:32.475 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 16:31:32.491 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 16:31:32.561 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 16:31:32.711 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 16:31:32.738 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 16:31:32.758 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 16:31:32.760 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 16:31:32.762 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 16:31:32.823 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 16:31:32.876 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 16:31:32.878 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 16:31:32.882 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 16:31:32.886 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 16:31:32.890 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 16:31:32.917 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 7.865 seconds (JVM running for 10.331)
+2021-05-18 16:31:55.331 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 16:31:55.332 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 16:31:55.334 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-18 16:31:56.853 [http-nio-8081-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 18:40:18.866 [main] INFO  com.yicao.pmiapi.TestAccount - Starting TestAccount using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 1716 (started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 18:40:18.869 [main] INFO  com.yicao.pmiapi.TestAccount - No active profile set, falling back to default profiles: default
+2021-05-18 18:40:25.208 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 18:40:26.033 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 18:40:26.033 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 18:40:26.033 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 18:40:26.033 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 18:40:26.034 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 18:40:26.034 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 18:40:26.034 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 18:40:26.034 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 18:40:26.034 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 18:40:26.034 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 18:40:26.035 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 18:40:27.169 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a8dd942, org.springframework.security.web.context.SecurityContextPersistenceFilter@353e6389, org.springframework.security.web.header.HeaderWriterFilter@19fec3d6, org.springframework.web.filter.CorsFilter@2322e56f, org.springframework.security.web.authentication.logout.LogoutFilter@73f6e07, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@35025a0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a65c995, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a0c5be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38732364, org.springframework.security.web.session.SessionManagementFilter@2aa14ae6, org.springframework.security.web.access.ExceptionTranslationFilter@233f52f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@257f30f7]
+2021-05-18 18:40:27.268 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 18:40:27.299 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 18:40:27.375 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 18:40:27.560 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 18:40:27.585 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 18:40:27.609 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 18:40:27.613 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 18:40:27.616 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 18:40:27.680 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 18:40:27.727 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 18:40:27.730 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 18:40:27.733 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 18:40:27.736 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 18:40:27.739 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 18:40:27.761 [main] INFO  com.yicao.pmiapi.TestAccount - Started TestAccount in 9.618 seconds (JVM running for 11.155)
+2021-05-18 18:40:28.385 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 18:40:28.851 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-05-18 18:40:28.869 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-05-18 18:48:27.528 [main] INFO  com.yicao.pmiapi.TestAccount - Starting TestAccount using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 11868 (started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 18:48:27.531 [main] INFO  com.yicao.pmiapi.TestAccount - No active profile set, falling back to default profiles: default
+2021-05-18 18:48:33.515 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 18:48:34.349 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 18:48:34.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 18:48:34.351 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 18:48:34.351 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 18:48:34.351 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 18:48:35.448 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38732364, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c950b3b, org.springframework.security.web.header.HeaderWriterFilter@6897a4a, org.springframework.web.filter.CorsFilter@7c70aae1, org.springframework.security.web.authentication.logout.LogoutFilter@418f890f, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@48cd319d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6806468e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8e99809, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f38f084, org.springframework.security.web.session.SessionManagementFilter@353e6389, org.springframework.security.web.access.ExceptionTranslationFilter@5287ba5f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67acfde9]
+2021-05-18 18:48:35.558 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 18:48:35.579 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 18:48:35.657 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 18:48:35.850 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 18:48:35.876 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 18:48:35.894 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 18:48:35.897 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 18:48:35.899 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 18:48:35.963 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 18:48:36.009 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 18:48:36.012 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 18:48:36.014 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 18:48:36.016 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 18:48:36.019 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 18:48:36.039 [main] INFO  com.yicao.pmiapi.TestAccount - Started TestAccount in 9.118 seconds (JVM running for 10.558)
+2021-05-18 18:48:36.557 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 18:48:37.053 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-05-18 18:48:37.064 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-05-18 18:49:54.824 [main] INFO  com.yicao.pmiapi.TestAccount - Starting TestAccount using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 12364 (started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 18:49:54.831 [main] INFO  com.yicao.pmiapi.TestAccount - No active profile set, falling back to default profiles: default
+2021-05-18 18:50:00.964 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 18:50:01.793 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 18:50:01.794 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 18:50:01.794 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 18:50:01.794 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 18:50:01.794 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 18:50:01.795 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 18:50:01.795 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 18:50:01.795 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 18:50:01.795 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 18:50:01.795 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 18:50:01.795 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 18:50:02.881 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16cf8438, org.springframework.security.web.context.SecurityContextPersistenceFilter@a0c5be, org.springframework.security.web.header.HeaderWriterFilter@4be490da, org.springframework.web.filter.CorsFilter@3e5beab5, org.springframework.security.web.authentication.logout.LogoutFilter@48bc2fce, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@7c588adc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14efa279, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@183fc2fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33ec2c0c, org.springframework.security.web.session.SessionManagementFilter@3c7b137a, org.springframework.security.web.access.ExceptionTranslationFilter@74b00247, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a8dd942]
+2021-05-18 18:50:03.009 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 18:50:03.035 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 18:50:03.110 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 18:50:03.318 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 18:50:03.345 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 18:50:03.368 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 18:50:03.370 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 18:50:03.373 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 18:50:03.442 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 18:50:03.490 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 18:50:03.493 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 18:50:03.495 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 18:50:03.498 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 18:50:03.501 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 18:50:03.525 [main] INFO  com.yicao.pmiapi.TestAccount - Started TestAccount in 9.317 seconds (JVM running for 10.715)
+2021-05-18 18:50:03.981 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 18:50:04.604 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-05-18 18:50:04.613 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-05-18 18:50:45.778 [main] INFO  com.yicao.pmiapi.TestAccount - Starting TestAccount using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 14060 (started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 18:50:45.781 [main] INFO  com.yicao.pmiapi.TestAccount - No active profile set, falling back to default profiles: default
+2021-05-18 18:50:51.823 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 18:50:52.662 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 18:50:52.662 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 18:50:52.662 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 18:50:52.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 18:50:52.664 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 18:50:53.769 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16cf8438, org.springframework.security.web.context.SecurityContextPersistenceFilter@a0c5be, org.springframework.security.web.header.HeaderWriterFilter@4be490da, org.springframework.web.filter.CorsFilter@3e5beab5, org.springframework.security.web.authentication.logout.LogoutFilter@48bc2fce, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@7c588adc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14efa279, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@183fc2fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33ec2c0c, org.springframework.security.web.session.SessionManagementFilter@3c7b137a, org.springframework.security.web.access.ExceptionTranslationFilter@74b00247, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a8dd942]
+2021-05-18 18:50:53.883 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 18:50:53.908 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 18:50:53.989 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 18:50:54.194 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 18:50:54.224 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 18:50:54.247 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 18:50:54.251 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 18:50:54.257 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 18:50:54.336 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 18:50:54.392 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 18:50:54.395 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 18:50:54.399 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 18:50:54.403 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 18:50:54.406 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 18:50:54.437 [main] INFO  com.yicao.pmiapi.TestAccount - Started TestAccount in 9.236 seconds (JVM running for 10.559)
+2021-05-18 18:50:55.086 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 18:50:55.536 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-05-18 18:50:55.547 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-05-18 18:53:44.549 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 17044 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 18:53:44.553 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 18:53:46.123 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 18:53:46.133 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 18:53:46.133 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 18:53:46.134 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 18:53:46.232 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 18:53:46.232 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1624 ms
+2021-05-18 18:53:49.592 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 18:53:49.990 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 18:53:49.990 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 18:53:49.990 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 18:53:49.990 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 18:53:49.990 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 18:53:49.991 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 18:53:49.991 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 18:53:49.991 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 18:53:49.991 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 18:53:49.991 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 18:53:49.992 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 18:53:50.029 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67e0ff3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fbe503c, org.springframework.security.web.header.HeaderWriterFilter@7fda2001, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@1980a3f, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2d4608a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15d0d6c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e33b52e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b2bf745, org.springframework.security.web.session.SessionManagementFilter@11c713b7, org.springframework.security.web.access.ExceptionTranslationFilter@5fcd1f0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33feda48]
+2021-05-18 18:53:50.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 18:53:50.125 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 18:53:50.127 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 18:53:50.150 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 18:53:50.225 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 18:53:50.424 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 18:53:50.450 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 18:53:50.471 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 18:53:50.473 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 18:53:50.476 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 18:53:50.535 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 18:53:50.592 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 18:53:50.597 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 18:53:50.600 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 18:53:50.604 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 18:53:50.607 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 18:53:50.626 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 6.741 seconds (JVM running for 8.603)
+2021-05-18 18:53:59.090 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 18:53:59.090 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 18:53:59.092 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-18 18:57:01.503 [http-nio-8081-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 21:12:21.414 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 9220 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 21:12:21.422 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 21:12:23.399 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 21:12:23.431 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:12:23.432 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 21:12:23.432 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 21:12:23.740 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 21:12:23.740 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2237 ms
+2021-05-18 21:12:27.572 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 21:12:28.003 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 21:12:28.033 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@373052b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2251b3bc, org.springframework.security.web.header.HeaderWriterFilter@7e64c1a9, org.springframework.web.filter.CorsFilter@84487f4, org.springframework.security.web.authentication.logout.LogoutFilter@da4cf09, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2d4608a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c232051, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24043ec5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67e0ff3a, org.springframework.security.web.session.SessionManagementFilter@28157173, org.springframework.security.web.access.ExceptionTranslationFilter@5ff6dd3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72443081]
+2021-05-18 21:12:28.112 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:12:28.144 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 21:12:28.144 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 21:12:28.163 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 21:12:28.242 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 21:12:28.435 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 21:12:28.466 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 21:12:28.485 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 21:12:28.487 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 21:12:28.490 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 21:12:28.552 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 21:12:28.600 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 21:12:28.602 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 21:12:28.605 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 21:12:28.608 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 21:12:28.610 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 21:12:28.635 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 8.305 seconds (JVM running for 10.886)
+2021-05-18 21:12:34.048 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 21:12:34.048 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 21:12:34.049 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-18 21:12:35.324 [http-nio-8081-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 21:12:50.051 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 2844 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 21:12:50.054 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 21:12:51.582 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 21:12:51.597 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:12:51.597 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 21:12:51.597 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 21:12:51.665 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 21:12:51.665 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+2021-05-18 21:12:55.142 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 21:12:55.454 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 21:12:55.483 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67e0ff3a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fbe503c, org.springframework.security.web.header.HeaderWriterFilter@7fda2001, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@1980a3f, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2d4608a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15d0d6c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e33b52e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b2bf745, org.springframework.security.web.session.SessionManagementFilter@11c713b7, org.springframework.security.web.access.ExceptionTranslationFilter@5fcd1f0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33feda48]
+2021-05-18 21:12:55.544 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:12:55.563 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 21:12:55.563 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 21:12:55.574 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 21:12:55.633 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 21:12:55.763 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 21:12:55.784 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 21:12:55.803 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 21:12:55.803 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 21:12:55.803 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 21:12:55.866 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 21:12:55.902 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 21:12:55.913 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 21:12:55.913 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 21:12:55.913 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 21:12:55.913 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 21:12:55.937 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 6.648 seconds (JVM running for 8.517)
+2021-05-18 21:18:26.253 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 4948 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 21:18:26.258 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 21:18:27.637 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 21:18:27.643 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:18:27.643 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 21:18:27.643 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 21:18:27.713 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 21:18:27.713 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1391 ms
+2021-05-18 21:18:30.522 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 21:18:30.802 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 21:18:30.824 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b2bf745, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c232051, org.springframework.security.web.header.HeaderWriterFilter@162c1dfb, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@67f63d26, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ab35b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c6a4ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe595dc, org.springframework.security.web.session.SessionManagementFilter@2251b3bc, org.springframework.security.web.access.ExceptionTranslationFilter@7e64c1a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6588b715]
+2021-05-18 21:18:30.887 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:18:30.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 21:18:30.903 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 21:18:30.914 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 21:18:30.972 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 21:18:31.093 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 21:18:31.112 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 21:18:31.124 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 21:18:31.132 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 21:18:31.132 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 21:18:31.182 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 21:18:31.213 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 21:18:31.223 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 21:18:31.223 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 21:18:31.227 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 21:18:31.227 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 21:18:31.247 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 5.637 seconds (JVM running for 7.423)
+2021-05-18 21:19:04.650 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 21:19:04.650 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 21:19:04.651 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-18 21:19:05.845 [http-nio-8081-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 21:22:17.404 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 11308 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 21:22:17.411 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 21:22:18.910 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 21:22:18.921 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:22:18.921 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 21:22:18.921 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 21:22:18.991 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 21:22:18.991 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1521 ms
+2021-05-18 21:22:22.151 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 21:22:22.440 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 21:22:22.471 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b2bf745, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c232051, org.springframework.security.web.header.HeaderWriterFilter@162c1dfb, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@67f63d26, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ab35b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c6a4ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe595dc, org.springframework.security.web.session.SessionManagementFilter@2251b3bc, org.springframework.security.web.access.ExceptionTranslationFilter@7e64c1a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6588b715]
+2021-05-18 21:22:22.530 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:22:22.541 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 21:22:22.549 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 21:22:22.561 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 21:22:22.620 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 21:22:22.751 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 21:22:22.771 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 21:22:22.790 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 21:22:22.790 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 21:22:22.790 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 21:22:22.830 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 21:22:22.875 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 21:22:22.877 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 21:22:22.880 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 21:22:22.880 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 21:22:22.880 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 21:22:22.900 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 6.189 seconds (JVM running for 7.996)
+2021-05-18 21:22:27.607 [http-nio-8081-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 21:22:27.608 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 21:22:27.611 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-05-18 21:22:28.815 [http-nio-8081-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 21:27:00.651 [http-nio-8081-exec-5] INFO  com.yicao.pmiapi.controller.UploadPhotoController - 图片上传，保存位置：E:/pmi/images/
+2021-05-18 21:27:00.652 [http-nio-8081-exec-5] INFO  com.yicao.pmiapi.controller.UploadPhotoController - 图片上传，访问URL：http://127.0.0.1:8081/images/fd90104ecd944db3a0e252607f3b9e6d.jpg
+2021-05-18 21:53:14.082 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 13152 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 21:53:14.082 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 21:53:15.484 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 21:53:15.491 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:53:15.492 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 21:53:15.492 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 21:53:15.566 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 21:53:15.566 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+2021-05-18 21:53:18.532 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 21:53:18.822 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 21:53:18.826 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 21:53:18.826 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 21:53:18.826 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 21:53:18.826 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 21:53:18.842 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b2bf745, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c232051, org.springframework.security.web.header.HeaderWriterFilter@162c1dfb, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@67f63d26, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ab35b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c6a4ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe595dc, org.springframework.security.web.session.SessionManagementFilter@2251b3bc, org.springframework.security.web.access.ExceptionTranslationFilter@7e64c1a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6588b715]
+2021-05-18 21:53:18.902 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:53:18.923 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 21:53:18.923 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 21:53:18.941 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 21:53:18.993 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 21:53:19.142 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 21:53:19.162 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 21:53:19.181 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 21:53:19.182 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 21:53:19.182 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 21:53:19.223 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 21:53:19.262 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 21:53:19.262 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 21:53:19.262 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 21:53:19.262 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 21:53:19.271 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 21:53:19.291 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 5.88 seconds (JVM running for 7.647)
+2021-05-18 21:53:29.155 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 21:53:29.157 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 21:53:29.160 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-05-18 21:53:30.737 [http-nio-8081-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 21:54:57.226 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 3408 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 21:54:57.232 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 21:54:59.553 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 21:54:59.562 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:54:59.562 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 21:54:59.562 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 21:54:59.646 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 21:54:59.646 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2323 ms
+2021-05-18 21:55:02.702 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 21:55:03.006 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 21:55:03.006 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 21:55:03.006 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 21:55:03.006 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 21:55:03.011 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 21:55:03.033 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b2bf745, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c232051, org.springframework.security.web.header.HeaderWriterFilter@162c1dfb, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@67f63d26, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ab35b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c6a4ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe595dc, org.springframework.security.web.session.SessionManagementFilter@2251b3bc, org.springframework.security.web.access.ExceptionTranslationFilter@7e64c1a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6588b715]
+2021-05-18 21:55:03.092 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 21:55:03.106 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 21:55:03.112 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 21:55:03.122 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 21:55:03.183 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 21:55:03.313 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 21:55:03.332 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 21:55:03.352 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 21:55:03.352 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 21:55:03.352 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 21:55:03.402 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 21:55:03.433 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 21:55:03.433 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 21:55:03.442 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 21:55:03.442 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 21:55:03.446 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 21:55:03.462 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 6.957 seconds (JVM running for 8.735)
+2021-05-18 21:55:07.028 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 21:55:07.029 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 21:55:07.030 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-18 21:55:08.194 [http-nio-8081-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 22:03:12.431 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 4600 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 22:03:12.432 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 22:03:13.843 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 22:03:13.852 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 22:03:13.852 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 22:03:13.852 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 22:03:13.946 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 22:03:13.946 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1444 ms
+2021-05-18 22:03:16.936 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 22:03:17.222 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 22:03:17.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 22:03:17.252 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b2bf745, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c232051, org.springframework.security.web.header.HeaderWriterFilter@162c1dfb, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@67f63d26, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ab35b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c6a4ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe595dc, org.springframework.security.web.session.SessionManagementFilter@2251b3bc, org.springframework.security.web.access.ExceptionTranslationFilter@7e64c1a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6588b715]
+2021-05-18 22:03:17.311 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 22:03:17.331 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 22:03:17.332 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 22:03:17.343 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 22:03:17.393 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 22:03:17.522 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 22:03:17.542 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 22:03:17.562 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 22:03:17.562 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 22:03:17.566 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 22:03:17.603 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 22:03:17.632 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 22:03:17.641 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 22:03:17.643 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 22:03:17.643 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 22:03:17.643 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 22:03:17.662 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 5.903 seconds (JVM running for 7.694)
+2021-05-18 22:03:21.227 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 22:03:21.227 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 22:03:21.229 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-18 22:04:13.768 [http-nio-8081-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 22:05:53.020 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 9068 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 22:05:53.026 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 22:05:54.585 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 22:05:54.594 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 22:05:54.595 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 22:05:54.596 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 22:05:54.675 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 22:05:54.685 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2021-05-18 22:05:58.844 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 22:05:59.115 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 22:05:59.146 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fe595dc, org.springframework.security.web.context.SecurityContextPersistenceFilter@15d0d6c9, org.springframework.security.web.header.HeaderWriterFilter@21ae657b, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@536b71b4, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7741d346, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aed69dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5af5d76f, org.springframework.security.web.session.SessionManagementFilter@3fbe503c, org.springframework.security.web.access.ExceptionTranslationFilter@7fda2001, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15a3b42]
+2021-05-18 22:05:59.196 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 22:05:59.216 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 22:05:59.216 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 22:05:59.225 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 22:05:59.316 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 22:05:59.456 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 22:05:59.476 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 22:05:59.494 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 22:05:59.496 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 22:05:59.496 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 22:05:59.535 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 22:05:59.567 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 22:05:59.567 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 22:05:59.575 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 22:05:59.575 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 22:05:59.575 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 22:05:59.596 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 7.211 seconds (JVM running for 8.959)
+2021-05-18 22:06:03.882 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 22:06:03.883 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 22:06:03.886 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-05-18 22:06:05.038 [http-nio-8081-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-05-18 22:08:45.000 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Starting PmiapiApplication using Java 1.8.0_211 on DESKTOP-BUSU3VC with PID 17312 (E:\System\Desktop\pmiapi\target\classes started by yicao in E:\System\Desktop\pmiapi)
+2021-05-18 22:08:45.004 [main] INFO  com.yicao.pmiapi.PmiapiApplication - No active profile set, falling back to default profiles: default
+2021-05-18 22:08:46.395 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-05-18 22:08:46.395 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-18 22:08:46.395 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-18 22:08:46.395 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-18 22:08:46.470 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-18 22:08:46.470 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1414 ms
+2021-05-18 22:08:50.945 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/login'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/css/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/js/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/images/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/index.html/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='favicon.ico'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/doc.html'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs/**'] with []
+2021-05-18 22:08:51.276 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/captcha'] with []
+2021-05-18 22:08:51.304 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5af5d76f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ab35b9c, org.springframework.security.web.header.HeaderWriterFilter@799f916e, org.springframework.web.filter.CorsFilter@bfc14b9, org.springframework.security.web.authentication.logout.LogoutFilter@789c3057, com.yicao.pmiapi.config.security.JwtAuthenticationTokenFilter@2a8a4e0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52454457, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f1a9a53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a8cea24, org.springframework.security.web.session.SessionManagementFilter@3c232051, org.springframework.security.web.access.ExceptionTranslationFilter@162c1dfb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52c9d3d0]
+2021-05-18 22:08:51.365 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-05-18 22:08:51.385 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-18 22:08:51.385 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-18 22:08:51.405 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-18 22:08:51.460 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-18 22:08:51.615 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_1
+2021-05-18 22:08:51.635 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_1
+2021-05-18 22:08:51.656 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: EditAreaUsingPUT_2
+2021-05-18 22:08:51.664 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingByIdUsingGET_1
+2021-05-18 22:08:51.665 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: GetBuildingListByAreaIdUsingGET_1
+2021-05-18 22:08:51.715 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getComplaintListByPageUsingGET_2
+2021-05-18 22:08:51.746 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addNoticeUsingPOST_1
+2021-05-18 22:08:51.755 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteNoticeUsingDELETE_1
+2021-05-18 22:08:51.755 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editNoticeUsingPUT_1
+2021-05-18 22:08:51.755 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeByIdUsingGET_1
+2021-05-18 22:08:51.755 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getNoticeListByPageUsingGET_1
+2021-05-18 22:08:51.785 [main] INFO  com.yicao.pmiapi.PmiapiApplication - Started PmiapiApplication in 7.538 seconds (JVM running for 9.434)
+2021-05-18 22:09:05.352 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 22:09:05.352 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-18 22:09:05.354 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-18 22:09:16.386 [http-nio-8081-exec-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

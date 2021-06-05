@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.FamilyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.Family">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="number" property="number" />
+        <result column="phone" property="phone" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, number, phone, remark
+    </sql>
+
+    <select id="" resultType="map">
+        SELECT
+            t2.id, t2.name, t2.number, t2.phone, t2.remark,
+            t1.house_num,
+            t3.name AS area_name,
+            t4.name AS building_name,
+            t5.name AS unit_name
+        FROM
+            t_house t1,
+            t_family t2,
+            t_area t3,
+            t_building t4,
+            t_unit t5
+        WHERE
+            <if test="word != null">
+                t2.name LIKE concat('%', #{word}, '%') AND
+            </if>
+            t1.family_id = t2.id AND
+            t1.area_id = t3.id AND
+            t1.building_num = t4.id AND
+            t1.unit_num = t5.id
+    </select>
+
+    <select id="findFamilyList" resultType="map">
+        SELECT * FROM
+            t_family AS t6 LEFT JOIN
+                (SELECT
+                t1.family_id,
+                t1.house_num,
+                t3.name AS area_name,
+                t4.name AS building_name,
+                t5.name AS unit_name
+                FROM
+                t_house t1,
+                t_area t3,
+                t_building t4,
+                t_unit t5
+                WHERE
+                t1.area_id = t3.id AND
+                t1.building_num = t4.id AND
+                t1.unit_num = t5.id) AS t7
+            ON t6.id = t7.family_id
+        <if test="word != null">
+            WHERE t6.name LIKE concat('%', #{word}, '%')
+        </if>
+    </select>
+
+    <select id="getFamilyNameById" resultType="java.lang.String">
+        select name as family_name from t_family where id = #{id}
+    </select>
+
+</mapper>

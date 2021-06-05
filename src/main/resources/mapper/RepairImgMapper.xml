@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.RepairImgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.RepairImg">
+        <id column="id" property="id" />
+        <result column="repair_id" property="repairId" />
+        <result column="img_url" property="imgUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, repair_id, img_url
+    </sql>
+
+    <select id="getRepairImgs" resultMap="BaseResultMap">
+        select * from t_repair_img where repair_id = #{id}
+    </select>
+
+</mapper>

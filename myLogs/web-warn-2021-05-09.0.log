@@ -1,0 +1,12 @@
+2021-05-09 11:23:45.203 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 13:03:37.642 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 13:11:55.787 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 14:35:23.561 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 14:52:52.300 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 15:50:30.787 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 16:35:45.020 [http-nio-8081-exec-6] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.yicao.pmiapi.pojo.RespBean com.yicao.pmiapi.controller.MemberController.addMemberByFamilyId(com.yicao.pmiapi.pojo.Member)]
+2021-05-09 17:01:41.133 [http-nio-8081-exec-10] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "complaint"]
+2021-05-09 21:24:38.188 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 22:04:23.654 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 22:21:16.716 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-09 22:51:31.189 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.

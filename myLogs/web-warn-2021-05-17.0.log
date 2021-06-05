@@ -1,0 +1,2 @@
+2021-05-17 10:49:18.341 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.
+2021-05-17 19:50:30.644 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Warn: Could not find @TableId in Class: com.yicao.pmiapi.pojo.Worker.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.BuildingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.Building">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="area" property="area" />
+        <result column="high" property="high" />
+        <result column="floor" property="floor" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, area, high, floor, remark
+    </sql>
+
+</mapper>

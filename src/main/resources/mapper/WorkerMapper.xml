@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yicao.pmiapi.mapper.WorkerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.Worker">
+        <id column="worker_id" property="worker_id"/>
+        <id column="worker_name" property="worker_name"/>
+        <id column="department" property="department"/>
+        <id column="worker_post" property="worker_post"/>
+        <id column="worker_birthday" property="worker_birthday"/>
+        <id column="worker_gender" property="worker_gender"/>
+        <id column="worker_phone" property="worker_phone"/>
+        <id column="worker_address" property="worker_address"/>
+        <id column="worker_native_place" property="worker_native_place"/>
+        <id column="worker_photo" property="worker_photo"/>
+        <id column="remark" property="remark"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        worker_id,worker_name,department, worker_post, worker_birthday, worker_gender, worker_phone, worker_address, worker_native_place, worker_photo, remark
+    </sql>
+
+    <select id="findListByPage" resultType="com.yicao.pmiapi.pojo.Worker">
+        SELECT * FROM t_worker
+        <if test="word != null">
+            WHERE worker_name LIKE concat('%', #{word}, '%')
+        </if>
+        limit #{start}, #{pageSize}
+    </select>
+
+    <select id="countWorker" resultType="int">
+        SELECT COUNT(*) FROM t_worker
+        <if test="word != null">
+            WHERE worker_name LIKE concat('%', #{word}, '%')
+        </if>
+    </select>
+
+
+</mapper>

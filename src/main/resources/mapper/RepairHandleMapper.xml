@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.RepairHandleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.RepairHandle">
+        <id column="id" property="id" />
+        <result column="repair_id" property="repairId" />
+        <result column="worker_id" property="workerId" />
+        <result column="body" property="body" />
+        <result column="date" property="date" />
+        <result column="remark" property="remark" />
+        <result column="worker_name" property="workerName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, repair_id, worker_id, body, date, remark
+    </sql>
+
+    <select id="getListById" resultMap="BaseResultMap">
+        select
+               t1.*, t2.worker_name
+        from
+             t_repair_handle t1,
+             t_worker t2
+        where
+              repair_id = #{id} and
+              t1.worker_id = t2.worker_id
+    </select>
+
+</mapper>

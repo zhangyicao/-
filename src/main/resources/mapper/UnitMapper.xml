@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.UnitMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.Unit">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="building" property="building" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, building, remark
+    </sql>
+
+
+    <select id="getKeyById" resultType="map">
+        SELECT
+          t1.id AS area_id,
+          t2.id AS building_id
+        FROM
+          t_area t1,
+          t_building t2
+        WHERE
+          t2.id = #{unitId} AND
+          t2.area = t1.id
+    </select>
+</mapper>

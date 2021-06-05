@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.AccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.Account">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="last_login" property="lastLogin" />
+        <result column="enable" property="enable" />
+    </resultMap>
+
+    <!--AccountMap-->
+    <resultMap id="AccountMap" type="com.yicao.pmiapi.pojo.Account">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="last_login" property="lastLogin" />
+        <result column="enable" property="enable" />
+        <result property="type" column="type" />
+        <result property="workerId" column="worker_id" />
+        <result property="familyId" column="family_id" />
+        <association property="worker" javaType="com.yicao.pmiapi.pojo.Worker">
+            <id column="worker_id" property="worker_id"/>
+            <id column="worker_name" property="worker_name"/>
+            <id column="department" property="department"/>
+            <id column="worker_post" property="worker_post"/>
+            <id column="worker_birthday" property="worker_birthday"/>
+            <id column="worker_gender" property="worker_gender"/>
+            <id column="worker_phone" property="worker_phone"/>
+            <id column="worker_address" property="worker_address"/>
+            <id column="worker_native_place" property="worker_native_place"/>
+            <id column="worker_photo" property="worker_photo"/>
+            <id column="remark" property="remark"/>
+        </association>
+        <association property="family" resultMap="com.yicao.pmiapi.mapper.FamilyMapper.BaseResultMap"  />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, username, password, last_login, enable
+    </sql>
+
+    <select id="getAccountByUserName" resultMap="AccountMap">
+        SELECT
+            DISTINCT
+             *
+        FROM
+            t_account t1,
+            t_worker t2,
+            t_worker_family_account t3
+        WHERE
+            t1.username = #{username} AND
+            t1.id = t3.account_id AND
+            t3.worker_id = t2.worker_id
+    </select>
+
+    <select id="getFamilyAccountByUsername" resultMap="AccountMap">
+        SELECT
+            DISTINCT
+             *
+        FROM
+            t_account t1,
+            t_family t2,
+            t_worker_family_account t3
+        WHERE
+            t1.username = #{username} AND
+            t1.id = t3.account_id AND
+            t3.family_id = t2.id
+    </select>
+
+    <select id="getTypeByUsername" resultType="map">
+        SELECT
+            t2.*
+        FROM
+            t_account t1,
+            t_worker_family_account t2
+        WHERE
+            t1.id = t2.account_id AND
+            t1.username = #{username}
+    </select>
+
+    <select id="getAdminUsernameByWorkerId" resultType="java.lang.String">
+        SELECT
+            t1.username
+        FROM
+            t_account t1,
+            t_worker_family_account t2
+        WHERE
+            t1.id = t2.account_id AND
+            t2.worker_id = #{id}
+    </select>
+
+    <select id="getFamilyUsernameByWorkerId" resultType="java.lang.String">
+        SELECT
+            t1.username
+        FROM
+            t_account t1,
+            t_worker_family_account t2
+        WHERE
+            t1.id = t2.account_id AND
+            t2.family_id = #{id}
+    </select>
+
+</mapper>

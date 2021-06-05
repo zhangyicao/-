@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.RepairMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.Repair">
+        <id column="id" property="id" />
+        <result column="family_id" property="familyId" />
+        <result column="house_id" property="houseId" />
+        <result column="body" property="body" />
+        <result column="date" property="date" />
+        <result column="handle_progress" property="handleProgress" />
+        <result column="remark" property="remark" />
+
+        <association property="address" select="com.yicao.pmiapi.mapper.ComplaintMapper.getAddress" column="house_id" />
+        <association property="familyName" select="com.yicao.pmiapi.mapper.FamilyMapper.getFamilyNameById" column="family_id" />
+        <collection property="repairImgList" select="com.yicao.pmiapi.mapper.RepairImgMapper.getRepairImgs" column="id" ofType="RepairImg" />
+        <collection property="repairHandleList" select="com.yicao.pmiapi.mapper.RepairHandleMapper.getListById" column="id" ofType="RepairHandle" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, family_id, worker_id, body, date, handle_progress, remark
+    </sql>
+
+    <select id="getById" resultMap="BaseResultMap">
+        select * from t_repair where id = #{id}
+    </select>
+
+    <select id="getList" resultMap="BaseResultMap">
+        select * from t_repair where handle_progress = #{handleProgress}
+        ORDER BY date asc
+    </select>
+
+</mapper>

@@ -1,0 +1,625 @@
+2021-05-08 15:37:05.880 [main] DEBUG com.yicao.pmiapi.mapper.FamilyMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:37:05.920 [main] DEBUG com.yicao.pmiapi.mapper.FamilyMapper.selectPage - ==> Parameters: 
+2021-05-08 15:37:05.962 [main] DEBUG com.yicao.pmiapi.mapper.FamilyMapper.selectPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:37:05.963 [main] DEBUG com.yicao.pmiapi.mapper.FamilyMapper.selectPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:37:05.970 [main] DEBUG com.yicao.pmiapi.mapper.FamilyMapper.selectPage - <==      Total: 2
+2021-05-08 15:39:16.650 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:39:16.690 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:39:16.730 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:39:16.730 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:39:16.740 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:41:58.223 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:41:58.253 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:41:58.303 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:41:58.303 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:41:58.313 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:42:39.540 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:42:39.570 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:42:39.609 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:42:39.609 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:42:39.619 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:43:00.716 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:43:00.756 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:43:00.796 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:43:00.796 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:43:00.806 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:43:39.714 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:43:39.744 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:43:39.794 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:43:39.794 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:43:39.794 [main] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:45:06.992 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:45:07.022 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 15:45:07.062 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:45:07.086 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:45:07.086 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 15:45:07.096 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:45:26.630 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:45:26.631 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:45:26.635 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:45:26.709 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:45:26.710 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:45:26.722 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:45:26.723 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:45:26.725 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:01.560 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:01.561 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:01.564 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:01.571 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:01.571 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:01.573 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:01.574 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:46:01.575 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:10.065 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:10.066 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:10.070 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:10.075 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:10.075 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:10.077 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:10.078 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:46:10.079 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:13.373 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:13.374 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:13.377 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:13.382 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:13.382 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:13.384 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:13.385 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:46:13.387 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:19.078 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:19.079 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:19.083 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:19.088 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:19.089 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:19.091 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:19.091 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:46:19.092 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:20.973 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:20.974 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:20.977 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:20.983 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:20.983 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:20.984 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:20.984 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:46:20.985 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:21.595 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:21.595 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:21.598 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:21.604 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:21.604 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:21.605 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:21.606 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:46:21.608 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:46:57.250 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:46:57.308 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:46:57.344 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:46:57.445 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:46:57.445 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:46:57.458 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:46:57.459 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:46:57.462 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:47:04.059 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:47:04.060 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:47:04.064 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:47:04.068 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:47:04.068 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:47:04.070 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:47:04.070 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 2(Long), 2(Long)
+2021-05-08 15:47:04.071 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:47:06.866 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:47:06.866 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:47:06.869 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:47:06.877 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:47:06.877 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:47:06.878 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:47:06.878 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 4(Long), 2(Long)
+2021-05-08 15:47:06.879 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 0
+2021-05-08 15:47:08.595 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:47:08.596 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:47:08.598 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:47:08.603 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:47:08.604 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:47:08.606 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:47:08.607 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:47:08.609 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:47:15.250 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:47:15.251 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:47:15.254 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:47:15.258 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:47:15.258 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:47:15.259 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:47:15.260 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:47:15.261 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:47:18.880 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:47:18.881 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:47:18.884 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:47:26.596 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:47:26.597 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:47:26.600 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:47:26.605 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family
+2021-05-08 15:47:26.606 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 
+2021-05-08 15:47:26.608 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family LIMIT ?,?
+2021-05-08 15:47:26.608 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: 0(Long), 2(Long)
+2021-05-08 15:47:26.610 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:49:50.522 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:49:50.547 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:49:50.573 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:49:50.669 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 15:49:50.669 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %1%(String)
+2021-05-08 15:50:47.057 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:50:47.080 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:50:47.106 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:50:47.195 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 15:50:47.195 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %=%(String)
+2021-05-08 15:50:48.778 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:50:48.778 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:50:48.783 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:50:48.793 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 15:50:48.794 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String)
+2021-05-08 15:50:48.812 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family WHERE (name LIKE ?) LIMIT ?,?
+2021-05-08 15:50:48.813 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String), 0(Long), 2(Long)
+2021-05-08 15:50:48.816 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:50:59.997 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:50:59.998 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 15:51:00.001 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 15:51:00.012 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 15:51:00.012 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %六%(String)
+2021-05-08 15:51:00.014 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family WHERE (name LIKE ?) LIMIT ?,?
+2021-05-08 15:51:00.014 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %六%(String), 0(Long), 2(Long)
+2021-05-08 15:51:00.016 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 2
+2021-05-08 15:59:51.850 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 15:59:51.850 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 15:59:51.850 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:19.223 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:19.223 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:19.227 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:19.229 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:19.230 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:19.234 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:19.236 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:19.237 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:19.240 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:21.275 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:21.275 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:21.277 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:21.278 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:21.280 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:21.281 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:21.285 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:21.286 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:21.291 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:40.476 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:00:40.477 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:00:40.479 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:00:40.485 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 16:00:40.485 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String)
+2021-05-08 16:00:40.487 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family WHERE (name LIKE ?) LIMIT ?,?
+2021-05-08 16:00:40.487 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String), 0(Long), 5(Long)
+2021-05-08 16:00:40.489 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 4
+2021-05-08 16:02:43.445 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:02:43.446 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:02:43.449 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:02:43.456 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 16:02:43.457 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String)
+2021-05-08 16:02:43.460 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,remark FROM t_family WHERE (name LIKE ?) LIMIT ?,?
+2021-05-08 16:02:43.461 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String), 0(Long), 5(Long)
+2021-05-08 16:02:43.464 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 4
+2021-05-08 16:05:30.020 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:05:30.020 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:05:30.054 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:05:30.054 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:05:30.099 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:05:30.099 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:05:30.145 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:05:30.146 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:05:30.150 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:05:30.256 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:05:30.257 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:05:30.260 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:05:30.266 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:05:30.267 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:05:30.270 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:05:30.306 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 16:05:30.306 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String)
+2021-05-08 16:05:30.318 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,phone,remark FROM t_family WHERE (name LIKE ?) LIMIT ?,?
+2021-05-08 16:05:30.319 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String), 0(Long), 5(Long)
+2021-05-08 16:05:30.321 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 4
+2021-05-08 16:05:30.340 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:05:30.341 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:05:30.345 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:05:30.353 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT COUNT(1) FROM t_family WHERE (name LIKE ?)
+2021-05-08 16:05:30.353 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String)
+2021-05-08 16:05:30.354 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==>  Preparing: SELECT id,name,number,phone,remark FROM t_family WHERE (name LIKE ?) LIMIT ?,?
+2021-05-08 16:05:30.355 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - ==> Parameters: %%(String), 0(Long), 5(Long)
+2021-05-08 16:05:30.356 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.selectMapsPage - <==      Total: 4
+2021-05-08 16:44:40.986 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:44:40.987 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:44:41.034 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:44:41.034 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:44:41.084 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:44:41.084 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:44:41.119 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:44:41.119 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:44:41.125 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:44:44.271 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:44:44.272 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:44:44.275 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:47:19.684 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:47:19.740 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:47:19.798 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:18.961 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:50:18.981 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:50:19.020 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:19.132 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:50:19.134 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 六(String)
+2021-05-08 16:50:19.184 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:50:19.185 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 六(String), 0(Long), 2(Long)
+2021-05-08 16:50:19.189 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 16:50:26.780 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:50:26.781 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:50:26.785 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:26.799 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:50:26.799 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:50:26.801 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:50:26.802 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 2(Long)
+2021-05-08 16:50:26.803 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 16:50:31.823 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:50:31.824 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:50:31.828 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:31.834 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:50:31.834 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:50:31.836 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:50:31.836 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 2(Long)
+2021-05-08 16:50:31.838 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 16:50:34.330 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:50:34.331 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:50:34.335 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:34.344 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:50:34.345 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:50:34.346 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:50:34.347 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 3(Long)
+2021-05-08 16:50:34.348 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 3
+2021-05-08 16:50:37.945 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:50:37.946 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:50:37.949 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:37.957 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:50:37.957 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:50:37.959 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:50:37.960 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 3(Long), 3(Long)
+2021-05-08 16:50:37.961 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 1
+2021-05-08 16:50:55.614 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:50:55.615 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:50:55.618 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:50:55.625 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:50:55.626 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:50:55.627 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:50:55.628 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 2(Long), 2(Long)
+2021-05-08 16:50:55.629 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 16:53:13.871 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:53:13.906 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:53:13.943 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:53:14.044 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:53:14.044 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:53:14.068 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:53:14.068 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 2(Long), 2(Long)
+2021-05-08 16:53:14.071 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 16:54:35.048 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:54:35.074 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:54:35.114 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:54:35.215 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:54:35.215 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:54:35.234 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:54:35.235 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 2(Long), 2(Long)
+2021-05-08 16:54:35.238 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 16:54:43.365 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:54:43.365 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:54:43.368 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:54:43.379 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:54:43.380 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 七(String)
+2021-05-08 16:54:43.381 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:54:43.382 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 七(String), 2(Long), 2(Long)
+2021-05-08 16:54:43.383 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 0
+2021-05-08 16:54:45.163 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:54:45.164 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 16:54:45.168 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:54:45.181 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:54:45.182 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 七(String)
+2021-05-08 16:54:45.185 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:54:45.186 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 七(String), 0(Long), 2(Long)
+2021-05-08 16:54:45.188 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 1
+2021-05-08 16:55:37.293 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:55:37.294 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:55:37.299 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:55:37.308 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:55:37.308 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:55:37.312 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:55:37.314 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:55:37.314 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:55:37.317 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:55:37.327 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:55:37.328 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:55:37.338 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:55:37.339 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 16:55:37.341 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 16:58:14.880 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:58:14.881 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:58:14.895 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:58:14.903 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:58:14.905 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:58:14.908 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:58:14.908 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 16:58:14.911 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 16:58:41.862 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 16:58:41.863 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 16:58:41.867 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 16:58:41.874 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 16:58:41.875 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 16:58:41.877 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 16:58:41.878 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 16:58:41.881 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:03:01.061 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:03:01.062 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:03:01.105 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:03:01.105 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:03:01.107 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:03:01.111 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:03:01.113 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:03:01.113 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:03:01.115 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:03:01.116 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:03:01.116 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:03:01.117 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:03:01.120 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:03:01.121 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:03:03.093 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:03:03.094 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:03:03.096 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:03:03.101 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:03:03.101 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:03:03.104 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:03:03.147 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:03:03.147 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:03:03.151 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:03:03.160 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:03:03.160 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:03:03.162 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:03:03.164 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:03:03.165 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:08:01.618 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:08:01.619 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:08:01.621 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:08:01.626 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:08:01.627 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:08:01.633 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:08:01.672 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:08:01.673 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:08:01.677 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:08:01.685 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:08:01.686 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:08:01.688 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:08:01.689 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:08:01.692 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:14:34.690 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:34.691 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:34.692 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:34.695 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:34.695 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:34.697 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:34.697 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:34.698 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:34.699 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:34.706 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:14:34.707 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:14:34.708 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:14:34.709 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:14:34.711 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:14:36.420 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:36.421 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:36.422 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:36.426 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:14:36.426 [http-nio-8081-exec-7] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 1(String)
+2021-05-08 17:14:39.875 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:39.876 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:39.878 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:39.884 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:14:39.884 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 五(String)
+2021-05-08 17:14:39.886 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:14:39.886 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 五(String), 0(Long), 5(Long)
+2021-05-08 17:14:39.887 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 1
+2021-05-08 17:14:43.614 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:43.614 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:43.616 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:43.619 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:14:43.619 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 六(String)
+2021-05-08 17:14:43.620 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:14:43.621 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 六(String), 0(Long), 5(Long)
+2021-05-08 17:14:43.622 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 17:14:47.363 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:14:47.363 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:14:47.365 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:14:47.369 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:14:47.369 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:14:47.371 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:14:47.372 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:14:47.373 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:15:33.424 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:33.424 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:33.425 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:33.425 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:33.427 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:33.427 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:33.432 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:33.432 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:33.434 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:15:33.434 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:15:33.435 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:33.437 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:15:33.438 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:15:33.441 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:15:35.806 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:35.806 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:35.806 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:35.806 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:35.809 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:35.809 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:35.812 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:35.813 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:35.814 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:35.817 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:15:35.817 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:15:35.821 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:15:35.821 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:15:35.823 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:15:40.620 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:40.620 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:40.621 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:40.622 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:40.622 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:40.625 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:40.626 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:40.627 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:40.629 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:40.630 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:15:40.630 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:15:40.634 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:15:40.635 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:15:40.637 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:15:42.650 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:42.650 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:42.651 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:42.656 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:15:42.657 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:15:42.658 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:15:42.659 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:15:42.660 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:15:43.335 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:43.335 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:43.337 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:43.341 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:15:43.341 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:15:43.343 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:15:43.343 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:15:43.344 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:15:43.866 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:15:43.867 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:15:43.868 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:15:43.875 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id
+2021-05-08 17:15:43.875 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:15:43.877 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT t2.id, t2.name, t2.number, t2.phone, t2.remark, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_family t2, t_area t3, t_building t4, t_unit t5 WHERE t2.name LIKE concat('%', ?, '%') AND t1.family_id = t2.id AND t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id LIMIT ?,?
+2021-05-08 17:15:43.877 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:15:43.879 [http-nio-8081-exec-5] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 4
+2021-05-08 17:36:56.870 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:56.870 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:56.904 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:56.904 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:56.949 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:56.949 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:56.987 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:56.988 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:56.993 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:57.071 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:57.071 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:57.074 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:57.079 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:57.080 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:57.082 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t2.name LIKE concat('%', ?, '%')
+2021-05-08 17:36:57.082 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:36:57.082 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:57.148 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:57.149 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:57.151 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:57.161 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t2.name LIKE concat('%', ?, '%')
+2021-05-08 17:36:57.162 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:36:58.037 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:58.038 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:58.039 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:58.039 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:58.042 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:58.044 [http-nio-8081-exec-8] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:58.049 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:58.050 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:58.053 [http-nio-8081-exec-7] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:58.054 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t2.name LIKE concat('%', ?, '%')
+2021-05-08 17:36:58.054 [http-nio-8081-exec-8] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:36:59.055 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:59.056 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:59.057 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:59.057 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:59.059 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:59.060 [http-nio-8081-exec-9] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:59.064 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:59.065 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:59.067 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:59.069 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t2.name LIKE concat('%', ?, '%')
+2021-05-08 17:36:59.070 [http-nio-8081-exec-9] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:36:59.903 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:59.904 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:59.904 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:59.904 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:59.906 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:59.906 [http-nio-8081-exec-2] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:36:59.911 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:36:59.911 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:36:59.912 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t2.name LIKE concat('%', ?, '%')
+2021-05-08 17:36:59.913 [http-nio-8081-exec-2] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:36:59.913 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.027 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:37:49.027 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:37:49.096 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:37:49.096 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:37:49.148 [http-nio-8081-exec-4] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.150 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.210 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:37:49.210 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:37:49.210 [http-nio-8081-exec-5] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.309 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:37:49.309 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:37:49.319 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.319 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:37:49.319 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:37:49.319 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.339 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%')
+2021-05-08 17:37:49.339 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:37:49.359 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT * FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%') LIMIT ?,?
+2021-05-08 17:37:49.359 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:37:49.359 [http-nio-8081-exec-4] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 5
+2021-05-08 17:37:49.379 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:37:49.379 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: admin(String)
+2021-05-08 17:37:49.389 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:37:49.399 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%')
+2021-05-08 17:37:49.399 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:37:49.399 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT * FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%') LIMIT ?,?
+2021-05-08 17:37:49.399 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:37:49.399 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 5
+2021-05-08 17:38:02.210 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:38:02.211 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 17:38:02.215 [http-nio-8081-exec-10] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:38:02.222 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%')
+2021-05-08 17:38:02.223 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 七(String)
+2021-05-08 17:38:02.226 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT * FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%') LIMIT ?,?
+2021-05-08 17:38:02.227 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: 七(String), 0(Long), 2(Long)
+2021-05-08 17:38:02.228 [http-nio-8081-exec-10] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 1
+2021-05-08 17:38:08.326 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:38:08.327 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 17:38:08.329 [http-nio-8081-exec-1] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:38:08.337 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%')
+2021-05-08 17:38:08.338 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:38:08.363 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT * FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%') LIMIT ?,?
+2021-05-08 17:38:08.365 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 2(Long)
+2021-05-08 17:38:08.367 [http-nio-8081-exec-1] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2
+2021-05-08 17:38:12.367 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:38:12.368 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 17:38:12.371 [http-nio-8081-exec-3] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:38:12.377 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%')
+2021-05-08 17:38:12.377 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:38:12.380 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT * FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%') LIMIT ?,?
+2021-05-08 17:38:12.380 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 0(Long), 5(Long)
+2021-05-08 17:38:12.383 [http-nio-8081-exec-3] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 5
+2021-05-08 17:38:18.139 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==>  Preparing: SELECT DISTINCT * FROM t_account t1, t_worker t2, t_worker_family_account t3 WHERE t1.username = ? AND t1.id = t3.account_id AND t3.worker_id = t2.worker_id
+2021-05-08 17:38:18.140 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - ==> Parameters: super(String)
+2021-05-08 17:38:18.142 [http-nio-8081-exec-6] DEBUG c.y.p.mapper.AccountMapper.getAccountByUserName - <==      Total: 1
+2021-05-08 17:38:18.151 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT COUNT(1) FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%')
+2021-05-08 17:38:18.151 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String)
+2021-05-08 17:38:18.153 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==>  Preparing: SELECT * FROM t_family AS t6 LEFT JOIN (SELECT t1.family_id, t1.house_num, t3.name AS area_name, t4.name AS building_name, t5.name AS unit_name FROM t_house t1, t_area t3, t_building t4, t_unit t5 WHERE t1.area_id = t3.id AND t1.building_num = t4.id AND t1.unit_num = t5.id) AS t7 ON t6.id = t7.family_id WHERE t6.name LIKE concat('%', ?, '%') LIMIT ?,?
+2021-05-08 17:38:18.153 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - ==> Parameters: (String), 5(Long), 5(Long)
+2021-05-08 17:38:18.155 [http-nio-8081-exec-6] DEBUG c.yicao.pmiapi.mapper.FamilyMapper.findFamilyList - <==      Total: 2

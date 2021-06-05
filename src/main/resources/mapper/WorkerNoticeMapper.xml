@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yicao.pmiapi.mapper.WorkerNoticeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yicao.pmiapi.pojo.WorkerNotice">
+        <id column="id" property="id" />
+        <result column="worker_id" property="workerId" />
+        <result column="notice_title" property="noticeTitle" />
+        <result column="notice_body" property="noticeBody" />
+        <result column="notice_date" property="noticeDate" />
+        <result column="remark" property="remark" />
+        <result column="worker_name" property="workerName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, worker_id, notice_title, notice_body, notice_date, remark
+    </sql>
+
+    <select id="findNoticeList" resultMap="BaseResultMap">
+        SELECT
+            t1.*,
+            t2.worker_name
+        FROM
+            t_worker_notice t1,
+            t_worker t2
+        WHERE
+            t1.worker_id = t2.worker_id
+        ORDER BY notice_date DESC
+    </select>
+
+</mapper>
